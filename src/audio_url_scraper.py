@@ -11,7 +11,7 @@ class AudioURLScraper:
         self._soup = None
         self._audio_elements = None
         self._audio_urls_dict = None
-        self._title = datetime.now().strftime("%Y-%M-%D_%H-%M-%S")  # if title not found
+        self._title = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # if title not found
 
     def _get_page_source(self):
         page_source_text = requests.get(url=self._page_url).text
